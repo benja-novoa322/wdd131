@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+#course-title {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    background-color: lightblue;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: lightcoral;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    display: grid;
+    max-width: 800px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+}
+
+
+
+.card {
+    background-color: #eee;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    text-align: center;
+    align-items: center;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+}
+
