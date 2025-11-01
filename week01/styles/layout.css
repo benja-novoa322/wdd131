@@ -6,7 +6,7 @@
 
 body {
     display: grid;
-    font-family: acme, Arial, sans-serif;
+    font-family: Arial, sans-serif;
     height: 100vh;
     grid-template: auto 1fr auto / auto 1fr auto;
     margin: 0;
