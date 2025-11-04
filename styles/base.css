@@ -39,15 +39,13 @@ main {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
-    display: grid;
     max-width: 800px;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr ;
 }
 
-
-
 .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr;
     background-color: #eee;
     padding: 12px;
     border-radius: 6px;
@@ -61,5 +59,9 @@ main {
     max-width: 300px;
     height: auto;
     border-radius: 4px;
+    grid-area: 2/2/3/3;
 }
 
+.card h2 {
+    grid-column: 1/3;
+}
