@@ -1,5 +1,5 @@
 * {
-    margin: o;
+    margin: 0;
     padding: 0;
 }
 
@@ -7,25 +7,30 @@ body {
     font-family: sans-serif;
 }
 
-
-
 header {
     text-align: center;
     padding: 1rem;
     background-color: #f5f5f5;
 }
 
-nav a {
-    display: block;
-    margin: 0.5rem 0;
-    color: #333;
+main {
+    max-width: 800px;
+    margin: 0 auto;
+
 }
 
-main {
+h1 {
+font-size: 2.5rem;
+padding: 3px;
+border-bottom: 1px solid #777;
+}
+
+.conteiner {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
-    padding: 1rem;
+    padding: 1rem;    
+    place-items: center;
 }
 
 figure {
@@ -50,14 +55,57 @@ footer {
     font-size: 0.9rem;
 }
 
-#menubutton {
-    background-color: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    margin-bottom: 1rem;
+nav {
+    background-color: #36454f;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
-#primarynav {
-    display: none;
+nav ul {
+    list-style-type: none;
 }
+
+#menubutton {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #000;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menubutton::before {
+    content: '☰';
+}
+
+#menubutton.open::before {
+    content: '❌';
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	list-style: none;
+	background-color: #333;
+	color: #fff;
+}
+
+nav a {
+    display: none;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border: 1px solid white;
+}
+
+.open a {
+    display: block;
+}
+
+
