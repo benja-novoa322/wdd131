@@ -1,0 +1,126 @@
+:root {
+    --background-main: rgba(255, 255, 255, 0.55);
+    --title-background: rgb(234, 10, 10, 0.90);
+}
+
+* {
+    margin: 0;
+    border: 0;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    background-color: var(--title-background);
+    text-align: center;
+    color: white;
+    max-width: 180px;
+    margin: 0 auto;
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+table {
+    margin: auto;
+    padding-top: 1rem;
+    font-size: 1.5rem;
+}
+
+img {
+    width: 180px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--title-background);
+    text-align: center;
+    color: white;
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 850px) {
+    main {
+        position: relative;
+        width: 100%;
+    }
+
+    .data-table {
+        position: absolute;
+        top: 15%;
+        left: 3%;
+        background-color: var(--background-main);
+    }
+
+    .data-title {
+        position: absolute;
+        width: 150px;
+        top: 4%;
+        left: 5%;
+        background-color: var(--title-background);
+
+    }
+
+    .weather-title {
+        position: absolute;
+        width: 200px;
+        top: 40%;
+        right: 12%;
+        background-color: var(--title-background);
+    }
+
+    .weather-title::after {
+        content: "🌤️";
+        font-size: 1.5rem;
+    }
+
+    .weather-table {
+        position: absolute;
+        bottom: 22%;
+        right: 1%;
+        background-color: var(--background-main);
+    }
+
+    .weather-icon {
+        display: none;
+        /* position: absolute;
+        width: 120px;
+        top: 39%;
+        right: 15%; */
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header h1 {
+        background-color: var(--title-background);
+        display: block;
+        text-align: center;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+
+    footer {
+        background-color: var(--title-background);
+        display: block;
+        text-align: center;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+    }
+}

@@ -66,5 +66,32 @@ li {
 
 	main {
 		width: 320px;
+		position: relative;
 	}
+
+	.hero img {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	h2:nth-of-type(1),
+	table:nth-of-type(1) {
+		position: absolute;
+		top: 15%;
+		left: 5%;
+		background-color: rgb(255, 255, 255, 0.85);
+		padding: 10px;
+		max-width: 35%;
+	}
+
+	
+table {
+	width: 100%;
+	border-collapse: collapse;
 }
+}
+
+
+
+
