@@ -1,0 +1,48 @@
+:root {
+    --th_backgr: rgb(27, 21, 21);
+    --secondary_backgr: rgb(98, 98, 98);
+    --border_color: rgb(16, 10, 10);
+    --soft_backgr: rgb(227, 220, 220);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border_color);
+    box-shadow: 0 0 10px var(--secondary_backgr);
+    border-collapse: collapse;
+    width: 400px;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--th_backgr);
+    font-size: 1.1rem;
+}
+
+tr:first-child th {
+    background-color: var(--th_backgr);
+    color: aliceblue;
+}
+
+th, td {
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    border: 1px solid var(--border_color);
+}
+
+thead tr:nth-child(2) {
+    background-color: var(--secondary_backgr);
+}
+
+td {
+    text-align: center;
+}
+
+.zebra {
+    background-color: var(--soft_backgr);
+}
